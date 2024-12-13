@@ -1,7 +1,7 @@
-module com.diceescape {
+module com.dice_escape {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens com.diceescape to javafx.fxml;
-    exports com.diceescape;
+    opens com.dice_escape to javafx.fxml;
+    exports com.dice_escape;
 }

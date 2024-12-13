@@ -1,4 +1,4 @@
-package com.diceescape;
+package com.dice_escape;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,4 +1,4 @@
-package com.diceescape;
+package com.dice_escape;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
