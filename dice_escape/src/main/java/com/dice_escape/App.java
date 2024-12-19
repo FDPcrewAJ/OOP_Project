@@ -12,6 +12,7 @@ import com.dice_escape.roles.Doctor;
 import com.dice_escape.roles.Freerunner;
 import com.dice_escape.roles.Player;
 import com.dice_escape.roles.Soldier;
+import com.dice_escape.roles.Spy;
 
 /**
  * JavaFX App
@@ -50,6 +51,9 @@ public class App extends Application {
 
                 Doctor pDoctor = new Doctor("green", "doctor", 4, 20, 8, 5, 2);
                 System.out.println(pDoctor);
+
+                Spy pSpy = new Spy("black", "spy", 4, 4, 6, 5);
+                System.out.println(pSpy);
 
                 launch();
     }

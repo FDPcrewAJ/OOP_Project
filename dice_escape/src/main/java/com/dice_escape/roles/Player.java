@@ -2,7 +2,7 @@ package com.dice_escape.roles;
 
 
 public class Player {
-    public static String color;
+    public String color;
     public String role;
     public int health = 30;
     public int dMovement = 4;

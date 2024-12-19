@@ -4,7 +4,7 @@ package com.dice_escape.roles;
  * Doctor Defaults
  * health buff: 20
  * healing buff: d8
- * attack debuff: -5
+ * attack debuff: 5
  * revival buff: 2
  */
 
