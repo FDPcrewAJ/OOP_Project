@@ -8,6 +8,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import com.dice_escape.roles.Player;
+import com.dice_escape.roles.Soldier;
+
 /**
  * JavaFX App
  */
@@ -34,10 +37,12 @@ public class App extends Application {
             }
         
             public static void main(String[] args) {
-                Player player1 = new Player("gray", "freerunner");
+                Player noRole = new Player("gray", "no");
+                System.out.println(noRole);
 
-                System.out.println("test");
-                System.out.println(player1);
+                Soldier pSoldier = new Soldier("red", "soldier", 4, 2, true);
+                System.out.println(pSoldier);
+                
                 launch();
     }
 

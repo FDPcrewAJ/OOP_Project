@@ -1,4 +1,4 @@
-package com.dice_escape;
+package com.dice_escape.roles;
 
 
 public class Player {
@@ -13,28 +13,6 @@ public class Player {
         color = pColor;
         role = pRole;
     }
-
-    public String makeRole(String role) 
-    {
-        if (role == "soldier") {
-            Soldier soldier = new Soldier();
-            String statReturn = soldier.toString();
-            return statReturn;
-        }
-
-        if (role == "freerunner") {
-            
-        }
-
-        if (role == "doctor") {
-            
-        }
-
-        if (role == "spy") {
-            
-        }
-    }
-
 
     @Override
     public String toString() 
