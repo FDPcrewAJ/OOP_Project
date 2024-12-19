@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import com.dice_escape.roles.Doctor;
 import com.dice_escape.roles.Freerunner;
 import com.dice_escape.roles.Player;
 import com.dice_escape.roles.Soldier;
@@ -38,14 +39,17 @@ public class App extends Application {
             }
         
             public static void main(String[] args) {
-                Player noRole = new Player("gray", "no");
+                Player noRole = new Player("gray", "no", 4);
                 System.out.println(noRole);
 
-                Soldier pSoldier = new Soldier("red", "soldier", 4, 2, true);
+                Soldier pSoldier = new Soldier("red", "soldier",4 ,4, 2, true);
                 System.out.println(pSoldier);
 
-                Freerunner pFreerunner = new Freerunner("blue", "freerunner", 6, 4, 5, 4);
+                Freerunner pFreerunner = new Freerunner("blue", "freerunner",4, 6, 4, 5, 4);
                 System.out.println(pFreerunner);
+
+                Doctor pDoctor = new Doctor("green", "doctor", 4, 20, 8, 5, 2);
+                System.out.println(pDoctor);
 
                 launch();
     }

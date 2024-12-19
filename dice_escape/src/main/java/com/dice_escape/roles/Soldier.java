@@ -13,9 +13,9 @@ public class Soldier extends Player{
     public boolean extraAttack;
 
 
-    public Soldier(String pColor, String pRole, int pDmgBuff, int pMvmtBuff, boolean pXtAttack)
+    public Soldier(String pColor, String pRole, int pRveChance, int pDmgBuff, int pMvmtBuff, boolean pXtAttack)
     {
-        super(pColor, pRole);
+        super(pColor, pRole, pRveChance);;
         damageBuff = pDmgBuff;
         movementDebuff = pMvmtBuff;
         extraAttack = pXtAttack;
@@ -25,8 +25,11 @@ public class Soldier extends Player{
     @Override
     public String toString()
     {
-        return "Player with " + color + " color, " + role + " role, " + health + " health, " 
-        + dMovement + " - " + movementDebuff + " movement, " 
-        + dAttack + " + " + damageBuff + " attack and extra attack: " + extraAttack;
+        return "Player with " + color + " color, " 
+        + role + " role, " + health + " health, d" 
+        + dMovement + " - " + movementDebuff + " movement, d" 
+        + dAttack + " + " + damageBuff + " attack, extra attack: " 
+        + extraAttack + " and d"
+        + dReviveChance + " revive chance.";
     }
 }

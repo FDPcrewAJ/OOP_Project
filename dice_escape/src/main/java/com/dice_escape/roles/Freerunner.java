@@ -14,19 +14,24 @@ public class Freerunner extends Player {
     int healthDebuff;
     int dDodgeChance;
 
-    public Freerunner(String pColor, String pRole, int pMvmtBuff, int patkDebuff, int phlthDebuff, int pDgeChance)
+    public Freerunner(String pColor, String pRole, int pRveChance, int pMvmtBuff, int patkDebuff, int phlthDebuff, int pDgeChance)
     {
-        super(pColor, pRole);
+        super(pColor, pRole, pRveChance);
         movementBuff = pMvmtBuff;
         attackDebuff = patkDebuff;
         healthDebuff = phlthDebuff;
         dDodgeChance = pDgeChance;
     }
     
+    @Override
     public String toString()
     {
-        return "Player with " + color + " color, " + role + " role, " + health + " - " + healthDebuff + " health, " 
-        + dMovement + " + " + movementBuff + " movement, " + dAttack + " - " + attackDebuff + " attack, and " 
-        + dDodgeChance + " dodge chance.";
+        return "Player with " + color + " color, " 
+        + role + " role, " 
+        + health + " - " + healthDebuff + " health, d" 
+        + dMovement + " + " + movementBuff + " movement, d" 
+        + dAttack + " - " + attackDebuff + " attack, d" 
+        + dDodgeChance + " dodge chance, and d" 
+        + dReviveChance + " revive chance.";
     }
 }
