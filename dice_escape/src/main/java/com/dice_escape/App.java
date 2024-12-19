@@ -55,6 +55,12 @@ public class App extends Application {
                 Spy pSpy = new Spy("black", "spy", 4, 4, 6, 5);
                 System.out.println(pSpy);
 
+
+                Die d6 = new Die(6);
+                System.out.println(d6);
+                Die d4 = new Die(4);
+                System.out.println(d4);
+
                 launch();
     }
 
