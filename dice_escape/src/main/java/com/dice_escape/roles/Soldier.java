@@ -8,9 +8,9 @@ package com.dice_escape.roles;
  */
 
 public class Soldier extends Player{
-    public int damageBuff = 4;
-    public int movementDebuff = 2;
-    public boolean extraAttack = true;
+    public int damageBuff;
+    public int movementDebuff;
+    public boolean extraAttack;
 
 
     public Soldier(String pColor, String pRole, int pDmgBuff, int pMvmtBuff, boolean pXtAttack)

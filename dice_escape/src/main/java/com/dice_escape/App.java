@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import com.dice_escape.roles.Freerunner;
 import com.dice_escape.roles.Player;
 import com.dice_escape.roles.Soldier;
 
@@ -42,7 +43,10 @@ public class App extends Application {
 
                 Soldier pSoldier = new Soldier("red", "soldier", 4, 2, true);
                 System.out.println(pSoldier);
-                
+
+                Freerunner pFreerunner = new Freerunner("blue", "freerunner", 6, 4, 5, 4);
+                System.out.println(pFreerunner);
+
                 launch();
     }
 
