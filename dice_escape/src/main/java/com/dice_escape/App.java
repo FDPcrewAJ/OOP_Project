@@ -12,6 +12,7 @@ import com.dice_escape.board_squares.BoardSquare;
 import com.dice_escape.board_squares.CombatSquare;
 import com.dice_escape.board_squares.HealthSquare;
 import com.dice_escape.board_squares.ReverseSquare;
+import com.dice_escape.board_squares.RevivalSquare;
 import com.dice_escape.roles.Doctor;
 import com.dice_escape.roles.Freerunner;
 import com.dice_escape.roles.Player;
@@ -45,19 +46,43 @@ public class App extends Application {
         
             public static void main(String[] args) {
                 System.out.println();
-                Player noRole = new Player("gray", "no", 4);
+                Player noRole = new Player("gray", 
+                                            "no", 
+                                            4);
                 System.out.println(noRole);
 
-                Soldier pSoldier = new Soldier("red", "soldier",4 ,4, 2, true);
+                Soldier pSoldier = new Soldier("red", 
+                                                "soldier",
+                                                4,
+                                                4, 
+                                                2, 
+                                                true);
                 System.out.println(pSoldier);
 
-                Freerunner pFreerunner = new Freerunner("blue", "freerunner",4, 6, 4, 5, 4);
+                Freerunner pFreerunner = new Freerunner("blue", 
+                                                        "freerunner",
+                                                        4, 
+                                                        6,
+                                                        4, 
+                                                        5, 
+                                                        4);
                 System.out.println(pFreerunner);
 
-                Doctor pDoctor = new Doctor("green", "doctor", 4, 20, 8, 5, 2);
+                Doctor pDoctor = new Doctor("green", 
+                                            "doctor", 
+                                            4, 
+                                            20, 
+                                            8, 
+                                            5, 
+                                            2);
                 System.out.println(pDoctor);
 
-                Spy pSpy = new Spy("black", "spy", 4, 4, 6, 5);
+                Spy pSpy = new Spy("black", 
+                                    "spy", 
+                                    4, 
+                                    4, 
+                                    6, 
+                                    5);
                 System.out.println(pSpy);
 
 
@@ -67,19 +92,32 @@ public class App extends Application {
                 System.out.println(d4);
 
 
-                BoardSquare basicSquare = new BoardSquare("gray", "default");
+                BoardSquare basicSquare = new BoardSquare("gray", 
+                                                            "default");
                 System.out.println(basicSquare);
 
-                HealthSquare healingSquare = new HealthSquare("green", "health", 6, 10);
+                HealthSquare healingSquare = new HealthSquare("green", 
+                                                                "health", 
+                                                                6, 
+                                                                10);
                 System.out.println(healingSquare);
 
-                ReverseSquare reverseSquare = new ReverseSquare("orange", "reverse", 6, 4);
+                ReverseSquare reverseSquare = new ReverseSquare("orange", 
+                                                                "reverse", 
+                                                                6, 
+                                                                4);
                 System.out.println(reverseSquare);
 
-                CombatSquare combatSquare = new CombatSquare("red", "combat", 20, 4);
+                CombatSquare combatSquare = new CombatSquare("red", 
+                                                            "combat", 
+                                                            20, 
+                                                            4);
                 System.out.println(combatSquare);
 
-
+                RevivalSquare revivalSquare = new RevivalSquare("blue", 
+                                                                "revival", 
+                                                                "odd");
+                System.out.println(revivalSquare);
 
                 launch();
     }
