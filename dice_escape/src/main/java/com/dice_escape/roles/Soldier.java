@@ -15,7 +15,7 @@ public class Soldier extends Player{
 
     public Soldier(String pColor, String pRole, int pRveChance, int pDmgBuff, int pMvmtBuff, boolean pXtAttack)
     {
-        super(pColor, pRole, pRveChance);;
+        super(pColor, pRole, pRveChance);
         damageBuff = pDmgBuff;
         movementDebuff = pMvmtBuff;
         extraAttack = pXtAttack;

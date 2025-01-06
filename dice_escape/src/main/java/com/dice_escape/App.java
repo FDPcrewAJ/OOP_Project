@@ -8,6 +8,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import com.dice_escape.board_squares.BoardSquare;
+import com.dice_escape.board_squares.CombatSquare;
+import com.dice_escape.board_squares.HealthSquare;
+import com.dice_escape.board_squares.ReverseSquare;
 import com.dice_escape.roles.Doctor;
 import com.dice_escape.roles.Freerunner;
 import com.dice_escape.roles.Player;
@@ -40,6 +44,7 @@ public class App extends Application {
             }
         
             public static void main(String[] args) {
+                System.out.println();
                 Player noRole = new Player("gray", "no", 4);
                 System.out.println(noRole);
 
@@ -60,6 +65,21 @@ public class App extends Application {
                 System.out.println(d6);
                 Die d4 = new Die(4);
                 System.out.println(d4);
+
+
+                BoardSquare basicSquare = new BoardSquare("gray", "default");
+                System.out.println(basicSquare);
+
+                HealthSquare healingSquare = new HealthSquare("green", "health", 6, 10);
+                System.out.println(healingSquare);
+
+                ReverseSquare reverseSquare = new ReverseSquare("orange", "reverse", 6, 4);
+                System.out.println(reverseSquare);
+
+                CombatSquare combatSquare = new CombatSquare("red", "combat", 20, 4);
+                System.out.println(combatSquare);
+
+
 
                 launch();
     }
